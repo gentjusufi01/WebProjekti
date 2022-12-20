@@ -108,14 +108,14 @@ img {
 
 /* Intro */
 .intro {
-  height: calc(100vh - 112px);
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
   background-color: lightgray;
   background-image: url('./foto/kapuqashum.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll; 
+  height: calc(100vh - 112px);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
   background-size: 100% 100%;
 /* background-blend-mode: overlay; */
 }
@@ -387,4 +387,11 @@ img {
     
     .social-links a:hover{
      color: #ff4321;
+    }
+    #slideshow{
+      width: 100%;
+      height: 700px;
+      padding-left: 200px;
+      padding-right: 200px;
+    
     }
