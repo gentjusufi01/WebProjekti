@@ -1,97 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Products</title>
-</head>
+<html>
+  <title>Produckt</title>
+  <link rel="stylesheet" href="../../Projekti web/WebProjekti/style.css">
+  
 <body>
-    <nav class="navbar">
-        <img src="./foto/Logo.png"  class="logob">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="Product.html">PRODUKTET</a></li>
-            <li><a href="#">CONTACT US</a></li>
-    
-        </ul>
-        </nav>
-       
-       <!-- Emri i kateogoris -->
-        <div class="h">
-            <h1><span style="color: green;">Korseta</span> te gjelbert</h1>
-          </div>
-          <!-- Fillimi i kateogoris -->
-    <div class="ac-center box">
-        <div class="ac">
-          <div class="img-cover">
-            <img src="foto/Korset1.jpg" alt="" />
-          </div>
-          <p>Korset</p>
-          
-          <div class="price">40€</div>
-        </div>
-  
-        <div class="ac">
-          <div class="img-cover">
-            <img src="foto/Korset2.jpg" alt="" />
-          </div>
-          <p>Korset</p>
-         
-          <div class="price">45€</div>
-        </div>
-  
-        <div class="ac">
-          <div class="img-cover">
-            <img src="foto/Korset3.jpg" alt="" />
-          </div>
-          <p>Korset</p>
-          
-          <div class="price">45€</div>
-        </div>
-        <div class="ac">
-          <div class="img-cover">
-            <img src="foto/Korset4.jpg" alt="" />
-          </div>
-          <p>Korset</p>
-          
-          <div class="price">50€</div>
-        </div>
-        <div class="ac">
-          <div class="img-cover">
-            <img src="foto/Korset5.jpg" alt="" />
-          </div>
-          <p>Korset</p>
-          
-          <div class="price">35€</div>
-        </div>
-        <div class="ac">
-          <div class="img-cover">
-            <img src="foto/Korset6.jpg" alt="" />
-          </div>
-          <p>Korset</p>
-          
-          <div class="price">30€</div>
-        </div>
-        <div class="ac">
-          <div class="img-cover">
-            <img src="foto/Korset7.jpg" alt="" />
-          </div>
-          <p>Korset</p>
-          
-          <div class="price">55€</div>
-        </div>
-        <div class="ac">
-          <div class="img-cover">
-            <img src="foto/Korset8.jpg" alt="" />
-          </div>
-          <p>Korset</p>
-          
-          <div class="price">15€</div>
-        </div>
+  <script src="javascript.js"></script>
+  <nav class="navbar">
+    <img src="../../Projekti web/WebProjekti/foto/Logo.png"  class="logob">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Product.html">PRODUKTET</a></li>
+        <li><a href="#">CONTACT US</a></li>
+
+    </ul>
+    </nav>
+
+<h2>Produktet</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('korset')"> Korset</button>
+  <button class="btn" onclick="filterSelection('kapele')"> Kapele</button>
+  <button class="btn" onclick="filterSelection('qant')"> Qanta</button>
+</div>
+
+<div class="container">
+  <div class="ac-center box">
+  <div class="filterDiv korset">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/Korset1.jpg" alt="" />
       </div>
+      <p> Olive Green Strapless Korset</p>
       
-    
+      <div class="price">40€</div>
+    </div>
+  </div>
+
+  <div class="filterDiv korset">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/PKorset.jpg" alt="" />
+      </div>
+      <p>Plain Pink Korset</p>
+     
+      <div class="price">30€</div>
+    </div>
+  </div>
+
+  <div class="filterDiv korset">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/Korset2.jpg" alt="" />
+      </div>
+      <p>Light Green Mesh Korset</p>
+     
+      <div class="price">30€</div>
+    </div>
+  </div>
+
+  <div class="filterDiv korset">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/PKorset1.jpg" alt="" />
+      </div>
+      <p>Pink Plush Korset</p>
+     
+      <div class="price">38€</div>
+    </div>
+  </div>
+
+  <div class="filterDiv korset">
+ <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/Korset3.jpg" alt="" />
+      </div>
+      <p>Olive Green Korset</p>
+     
+      <div class="price">35€</div>
+    </div>
+  </div>
+  
+  <div class="filterDiv korset">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/PKorset2.jpg" alt="" />
+      </div>
+      <p>Vibrant Pink Korset</p>
+     
+      <div class="price">25€</div>
+    </div>
+  </div>
+
+  <div class="filterDiv korset">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/Korset4.jpg" alt="" />
+      </div>
+      <p>Complicated Green Korset</p>
+     
+      <div class="price">50€</div>
+    </div>
+  </div>
+
+  <div class="filterDiv korset">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/PKorset3.jpg" alt="" />
+      </div>
+      <p>Pink Strapless Korset</p>
+     
+      <div class="price">33€</div>
+    </div>
+  </div>
+  
+  <div class="filterDiv korset">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/Korset5.jpg" alt="" />
+      </div>
+      <p>Light Green Pearl Korset</p>
+     
+      <div class="price">55€</div>
+    </div>
+  </div>
+  
+  <div class="filterDiv korset">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/Korset6.jpg" alt="" />
+      </div>
+      <p>Vibrant Green Korset</p>
+     
+      <div class="price">25€</div>
+    </div>
+  </div>
+  
+  <div class="filterDiv kapele">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/Kapele5.jpg" alt="" />
+      </div>
+      <p>Kapele</p>
+      
+      <div class="price">55€</div>
+    </div>
+  </div>
+
+  <div class="filterDiv kapele">
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/Kapele7.jpg" alt="" />
+      </div>
+      <p>Kapele</p>
+      
+      <div class="price">55€</div>
+    </div>
+  </div>
+  <div class="filterDiv kapele">
+
+    <div class="ac">
+      <div class="img-cover">
+        <img src="../../Projekti web/WebProjekti/foto/Kapele8.jpg" alt="" />
+      </div>
+      <p>Kapele</p>
+      
+      <div class="price">15€</div>
+    </div>
+  </div>
+  <div class="filterDiv qant">
+    <img src="../../Projekti web/WebProjekti/foto/qant13.jpg">
+  </div>
+  <div class="filterDiv qant">
+    <img src="../../Projekti web/WebProjekti/foto/qant11.jpg">
+  </div>
+  <div class="filterDiv qant">
+    <img src="../../Projekti web/WebProjekti/foto/qant3.jpg">
+  </div>
+</div>
+</div>
 </body>
 </html>
