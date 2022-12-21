@@ -17,7 +17,7 @@ setTimeout("ndrroImg()", 1500)
 }
 document.body.addEventListener('load', ndrroImg());
 
-filterSelection("all")
+// filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -59,3 +59,5 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+filterSelection('all');
