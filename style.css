@@ -424,7 +424,7 @@ s{
     }
     
     /* Style the buttons */
-    .btn {
+    .buton {
       border: none;
       outline: none;
       padding: 12px 16px;
@@ -433,7 +433,7 @@ s{
       color: black;
     }
     
-    .btn:hover {
+    .buton:hover {
       background-color: #ddd;
     }
     
