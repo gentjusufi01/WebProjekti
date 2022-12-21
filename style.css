@@ -441,3 +441,53 @@ s{
       background-color: #666;
       color: white;
     }
+    /*DOM*/
+
+    .colors {
+      display: flex;
+      width: 6rem;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    .violet {
+      background: rgb(186, 64, 238);
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+    
+    .pink {
+      background: rgb(223, 60, 198);
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+
+    .blue {
+      background: rgb(29, 136, 228);
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+    .red {
+      background: rgb(231, 16, 16);
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+    
+    button violet-button {
+      background-color: rgb(223, 60, 198);
+    }
+    
+    .button-text {
+      color: #fff;
+      margin-left: 5px;
+    }
+    
+    .feedback {
+      display: none;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+    }

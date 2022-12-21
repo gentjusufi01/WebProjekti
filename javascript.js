@@ -63,3 +63,27 @@ for (var i = 0; i < btns.length; i++) {
 filterSelection('all');
 
 //DOM
+const image1 = document.getElementsByClassName('img-coverr')[0];
+const violetButton = document.getElementsByClassName('violet')[0];
+const pinkButton = document.getElementsByClassName('pink')[0];
+const blueButton = document.getElementsByClassName('blue')[0];
+const redButton = document.getElementsByClassName('red')[0];
+
+
+
+violetButton.addEventListener("click" , function(){
+    image1.style.backgroundImage = "url('./foto/Kapele7.jpg')";
+});
+
+
+pinkButton.addEventListener("click", function(){
+    image1.style.backgroundImage="url(./foto/Kapele9.jpg)";
+})
+
+blueButton.addEventListener("click", function(){
+    image1.style.backgroundImage="url(./foto/Kapele19)";
+})
+
+redButton.addEventListener("click", function(){
+  image1.style.backgroundImage="url(./foto/Kapele20)";
+})
