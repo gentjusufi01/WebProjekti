@@ -356,7 +356,7 @@ s{
     
      
      #footer ul li{
-        color: white;
+        color: black;
         list-style:none;
         margin: 30px 40px;
         padding-top: 20px;
@@ -366,7 +366,7 @@ s{
     
     #footer ul li a{
         text-decoration: none;
-        color: white;
+        color: black;
         font-family: sans-serif;
     }
     
