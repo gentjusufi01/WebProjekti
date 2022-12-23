@@ -446,7 +446,7 @@ s{
       .about-section{
       background: url(./foto/AboutUs1\ \(1\).jpg) no-repeat left;
       background-size: 55%;
-      background-color: #fdfdfd;
+      /* background-color: #fdfdfd; */
       overflow: hidden;
       padding: 100px 0;
   }
@@ -454,7 +454,7 @@ s{
   .inner-container{
       width: 55%;
       float: right;
-      background-color: #EAFDCF;
+      background-color: #fbeec1;;
       padding: 150px;
   }
   
