@@ -444,7 +444,7 @@ s{
     }
     /*About Us*/
       .about-section{
-      background: url(../../AboutUs/AboutUs1.jpg) no-repeat left;
+      background: url(../../AboutUs/AboutUs1\ \(1\).jpg) no-repeat left;
       background-size: 55%;
       background-color: #fdfdfd;
       overflow: hidden;
@@ -454,7 +454,7 @@ s{
   .inner-container{
       width: 55%;
       float: right;
-      background-color: #fdfdfd;
+      background-color: rgb(198, 250, 198);
       padding: 150px;
   }
   
