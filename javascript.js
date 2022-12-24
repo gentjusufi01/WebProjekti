@@ -61,4 +61,27 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 filterSelection('all');
-//Dom
+
+
+function validate() {
+
+  var user = document.getElementById("e").value;
+  var user2 = document.getElementById("e");
+  var password = document.getElementById("Pasi").value;
+  var emri= document.getElementById("EmriRegister").value;
+
+  
+  var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(emri==null||emri.trim()==""){
+    alert("!!Nuk jeni Regjistruar!!");
+    return false;
+  }else if (re.test(user) && password>6) {
+    alert("Jeni Regjistruar me Sukses!");
+    return true;
+  }
+  else {
+    alert("!!Nuk jeni Regjistruar!!");
+    return false;
+  }
+  
+}
