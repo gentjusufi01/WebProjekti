@@ -3,11 +3,9 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-	<title>creating mailing system</title>
     <script src="javascript.js"></script>
-	<script type="text/javascript">
-		
-	</script>
+
+	<title>Log In</title>
 </head>
 
 <body >
@@ -17,75 +15,40 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="Product.html">PRODUKTET</a></li>
             <li><a href="AboutUs.html">ABOUT US</a></li>
-            <li><a href="Register.html">REGISTER</a></li>
             <li><a href="News.html">NEWS</a></li>
+            <li><a href="Register.html">REGISTER</a></li>
 
     
         </ul>
         </nav>
-	<center>
-		
-		<form>
-			<fieldset style="width:300px ;margin-bottom: 50px;margin-top: 50px;">
-				<legend>Regjistrohu Tani:</legend>
-				<table>
-					<tr>
-                        <p>Emri:</p>
-						<input type="text"
-							placeholder=" Emri"
-							maxlength="10"
-                            id="EmriRegister">
-					</tr>
-					<br>
-					<tr>
-                        <p>Mbiemri:</p>
-						<input type="text"
-							placeholder=" Mbiemri"
-							maxlength="10">
-					</tr>
-					<br>
-					<tr>
-                        <p>Email Adressa:</p>
-						<input type="email"
-							placeholder=" username@gmail.com" id="e">
-					</tr>
-					<br>
-					<tr>
-                        <p>Password:</p>
-						<input type="password" placeholder=" Password"id="Pasi">
-                        
-					</tr>
-					<br>
-					<tr>
-                        <p>Confirm Password:</p>
-						<input type="password" placeholder="Confirm  Password"
-                        >
-					</tr>
-					<br>
-					<tr>
-                        <p>Numri Telefonit</p>
-						<input type="text" placeholder=" Numri i Telefonit">
-					</tr>
-					<br>
-					<tr>
-						<label>Gjinia: </label>
-						<select id="gjinia">
-                            <option value="">Zgjedh</option>
-                            
-							<option value="male">Mashkull</option>
-							<option value="female">Femer</option>
-                            <option value="others">others</option> 
-							
-						</select>
-					</tr>
-					<br><br>
-					<tr><input  style="margin: 0px;"   class="active btn" type="submit"
-						onclick="validate()" value="create">
-					</tr>
-				</table>
-			</fieldset>
-		</form>
-    </center>   
+        <div class="login">
+            <script src="../WebProjekti/javascript.js"></script>
+            <div class="boxx">
+                <div class="butonat">
+                    <div id="btnn"></div>
+                    <button type="button" class="butoni" onclick="login()">Log-in</button>
+                    <button type="button" class="butoni" onclick="register()">Register</button>
+                </div>
+            <form id="Login" class="forma">
+                <input type="text" class="input" placeholder="Username" required>
+                <input type="password" class="input" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="Regjistrohu" class="forma">
+                <input type="text" class="input" placeholder="Emri" required>
+                <input type="text" class="input" placeholder="Mbiemri" required>
+                <input type="text" class="input" placeholder="Username" required>
+                <input type="password" class="input" placeholder="Password" required>
+                <input type="text" class="input" placeholder="Email" required>
+                <input type="number" class="input" placeholder="Numri Kontaktues" required>
+                <select class="Gjinia">
+                    <option>Femer</option>
+                    <option>Mashkull</option>
+                </select>
+                <button type="submit" class="submit-btn">Regjistrohu</button>
+            </form>
+            </div>
+        </div>
         <section id="footer">
             
             <div class="foot">
