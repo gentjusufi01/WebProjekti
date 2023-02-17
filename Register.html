@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
 
 	<title>Log In</title>
 </head>
@@ -22,7 +21,6 @@
         </ul>
         </nav>
         <div class="login">
-            <script src="../WebProjekti/javascript.js"></script>
             <div class="boxx">
                 <div class="butonat">
                     <div id="btnn"></div>
@@ -30,15 +28,15 @@
                     <button type="button" class="butoni" onclick="register()">Register</button>
                 </div>
             <form id="Login" class="forma">
-                <input type="text" class="input" placeholder="Username" required>
-                <input type="password" class="input" placeholder="Password" required>
+                <input type="text" class="input" placeholder="Emri i Perdoruesit" required>
+                <input type="password" class="input" placeholder="Fjalkalimi" required>
                 <button type="submit" class="submit-btn">Log in</button>
             </form>
             <form id="Regjistrohu" class="forma">
                 <input type="text" class="input" placeholder="Emri" required>
                 <input type="text" class="input" placeholder="Mbiemri" required>
-                <input type="text" class="input" placeholder="Username" required>
-                <input type="password" class="input" placeholder="Password" required>
+                <input type="text" class="input" placeholder="Emri i Perdoruesit" required>
+                <input type="password" class="input" placeholder="Fjalkalimi" required>
                 <input type="text" class="input" placeholder="Email" required>
                 <input type="number" class="input" placeholder="Numri Kontaktues" required>
                 <select class="Gjinia">
@@ -48,6 +46,22 @@
                 <button type="submit" class="submit-btn">Regjistrohu</button>
             </form>
             </div>
+        <script>
+            var x = document.getElementById("Login");
+            var y = document.getElementById("Regjistrohu");
+            var z = document.getElementById("btnn");
+
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+                }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+                }
+        </script>
         </div>
         <section id="footer">
             
@@ -59,16 +73,8 @@
         
                 </ul>
             </div>
-            <div>
-                <ul style="
-                position: absolute;
-                right:0;
-                margin-right: 10px;
-                top: 0px;
-                margin-top: 0px;
-                padding-top: 50px;
-                padding-right: 100px;
-                ">
+            <div class="rfoot">
+               <ul>
                   <li>CONTACT US</li>
                   <li>Spiffyline@gmail.com</li>
                   <li>+383 48 374 893</li>
@@ -81,7 +87,8 @@
                   </div>
             </div>
         </section>
-	
+        <script src="javascript.js"></script>
+
 </body>
 
 </html>

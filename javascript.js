@@ -1,3 +1,4 @@
+//Slideri
 var i = 0;
 var imgArray = [
 "foto/korsetashum.jpg",
@@ -62,7 +63,7 @@ for (var i = 0; i < btns.length; i++) {
 
 filterSelection('all');
 
-
+//Validimi
 function validate() {
 
   var user = document.getElementById("e").value;
@@ -86,7 +87,7 @@ function validate() {
   
 }
 
-//Login dhe Register Form
+/*//Login dhe Register Form
 
 var x = document.getElementById("Login");
 var y = document.getElementById("Regjistrohu");
@@ -102,3 +103,4 @@ function login(){
     y.style.left = "450px";
     z.style.left = "0";
 }
+*/

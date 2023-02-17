@@ -374,6 +374,15 @@ s{
         color: #ff4321;
     } 
     
+    .rfoot ul{
+      position: absolute;
+      right:0;
+      margin-right: 10px;
+      top: 0px;
+      margin-top: 0px;
+      padding-top: 50px;
+      padding-right: 100px;
+    }
     
     .social-links{
         margin-left: 8%;
@@ -508,7 +517,7 @@ s{
 News
 */
 #h2{
-  background-color: #00FF00;
+  background-color: #ff2626;
   text-align: center;
 }
 #News{
@@ -557,7 +566,12 @@ padding-bottom: 40px;
 #News2 ul li{
   padding-left:60px;
 }
+
 /*Login Dhe Register*/
+
+.login{
+  background-color: #EAFDCF;
+}
 .boxx{
   width: 380px;
   height: 520px;
@@ -572,7 +586,7 @@ padding-bottom: 40px;
   width: 220px;
   margin: 35px auto;
   position: relative;
-  box-shadow: 0 0 30px 9px #EAFDCF;
+  box-shadow: 0 0 10px 9px #EAFDCF;
   border-radius: 30px;
 }
 
