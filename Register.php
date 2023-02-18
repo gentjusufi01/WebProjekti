@@ -30,9 +30,9 @@
                     <button type="button" class="butoni" onclick="login()">Log-in</button>
                     <button type="button" class="butoni" onclick="register()">Register</button>
                 </div>
-            <form id="Login" class="forma">
-                <input type="text" class="input" placeholder="Emri i Perdoruesit" required>
-                <input type="password" id="Pasi" class="input" placeholder="Fjalkalimi" required>
+            <form id="Login" class="forma" action="checklogin.php" method="post">
+                <input type="text"  name="Username" class="input" placeholder="Emri i Perdoruesit" required>
+                <input type="password"  name="Passwordi" id="Pasi" class="input" placeholder="Fjalkalimi" required>
                 <button onclick="ValidateLog()" type="submit" class="submit-btn">Log in</button>
             </form>
             <form id="Regjistrohu" class="forma" method="POST" action="insertimi.php">
