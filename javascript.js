@@ -125,7 +125,7 @@ function Validate(){
   }
 
 }*/
-function Validate() {
+function ValidateReg() {
   var mail = document.getElementById("Email").value;
   var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   
@@ -137,7 +137,7 @@ function Validate() {
     return false;
   }
 }
-function Validate(){
+function ValidateReg(){
   var pasi = document.getElementById("Pas").value;
   var pregex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
@@ -150,7 +150,7 @@ function Validate(){
     return false;
   }
 }
-function Validate(){
+function ValidateReg(){
   var nr = document.getElementById("Nr").value;
   var nregex = /^04\d{7}$/;
 
@@ -160,6 +160,19 @@ function Validate(){
   }
   else{
     alert("Numri Kontktues nuk eshte valid");
+    return false;
+  }
+}
+function ValidateLog(){
+  var pasi = document.getElementById("Pasi").value;
+  var pregex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+  if(pregex.test(pasi)){
+    alert("Fjalkalimi juaj eshte valid");
+    return true;
+  }
+  else{
+    alert ("Fjalkalimi juaj nuk i ploteson kerkesat");
     return false;
   }
 }
