@@ -62,69 +62,6 @@ for (var i = 0; i < btns.length; i++) {
 
 filterSelection('all');
 
-/*//Validimi
-function validate() {
-
-  var user = document.getElementById("e").value;
-  var user2 = document.getElementById("e");
-  var password = document.getElementById("Pasi").value;
-  var emri= document.getElementById("EmriRegister").value;
-
-  
-  var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if(emri==null||emri.trim()==""){
-    alert("!!Nuk jeni Regjistruar!!");
-    return false;
-  }else if (re.test(user) && password>6) {
-    alert("Jeni Regjistruar me Sukses!");
-    return true;
-  }
-  else {
-    alert("!!Nuk jeni Regjistruar!!");
-    return false;
-  }
-  
-}*/
-
-/*//Login dhe Register Form
-
-var x = document.getElementById("Login");
-var y = document.getElementById("Regjistrohu");
-var z = document.getElementById("btnn");
-
-function register(){
-    x.style.left = "-400px";
-    y.style.left = "50px";
-    z.style.left = "110px";
-}
-function login(){
-    x.style.left = "50px";
-    y.style.left = "450px";
-    z.style.left = "0";
-}
-
-//Validimi
-function Validate(){
-  
-  var mail = getElementById("Email").value;
-
-  var Regex = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9-])+([a-zA-Z0-9-]+)*$/;
-
-  if (Regex.Email(mail)) {
-
-    alert("Email adresa juaj eshte valide!");
-
-    return true;
-
-  } else {
-
-    alert("Email adresa juaj nuk eshte valide, provoni perseri!");
-
-    return false;
-
-  }
-
-}*/
 function ValidateReg() {
   var mail = document.getElementById("Email").value;
   var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -163,16 +100,16 @@ function ValidateReg(){
     return false;
   }
 }
-function ValidateLog(){
-  var pasi = document.getElementById("Pasi").value;
-  var pregex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+// function ValidateLog(){
+//   var pasi = document.getElementById("Pasi").value;
+//   var pregex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
-  if(pregex.test(pasi)){
-    alert("Fjalkalimi juaj eshte valid");
-    return true;
-  }
-  else{
-    alert ("Fjalkalimi juaj nuk i ploteson kerkesat");
-    return false;
-  }
-}
+//   if(pregex.test(pasi)){
+//     alert("Fjalkalimi juaj eshte valid");
+//     return true;
+//   }
+//   else{
+//     alert ("Fjalkalimi juaj nuk i ploteson kerkesat");
+//     return false;
+//   }
+// }

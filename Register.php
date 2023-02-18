@@ -33,7 +33,7 @@
             <form id="Login" class="forma" action="checklogin.php" method="post">
                 <input type="text"  name="Username" class="input" placeholder="Emri i Perdoruesit" required>
                 <input type="password"  name="Passwordi" id="Pasi" class="input" placeholder="Fjalkalimi" required>
-                <button onclick="ValidateLog()" type="submit" class="submit-btn">Log in</button>
+                <button type="submit" class="submit-btn">Log in</button>
             </form>
             <form id="Regjistrohu" class="forma" method="POST" action="insertimi.php">
                 <input type="text" name="emri" class="input" placeholder="Emri" required>
