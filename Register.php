@@ -8,6 +8,8 @@
 </head>
 
 <body >
+
+
     <script src="javascript.js"></script>
     <nav class="navbar">
         <a href="index.php"><img src="./foto/Logo.png"  class="logob"></a>
@@ -33,17 +35,16 @@
                 <input type="password" class="input" placeholder="Fjalkalimi" required>
                 <button type="submit" class="submit-btn">Log in</button>
             </form>
-            <form id="Regjistrohu" class="forma">
-               
-                <input type="text" class="input" placeholder="Emri" required>
-                <input type="text" class="input" placeholder="Mbiemri" required>
-                <input type="text" class="input" placeholder="Emri i Perdoruesit" required>
-                <input type="password" class="input" placeholder="Fjalkalimi" required>
-                <input type="text" class="input" id="Email" placeholder="Email" required>
-                <input type="number" class="input" placeholder="Numri Kontaktues" required>
-                <select class="Gjinia">
-                    <option>Femer</option>
-                    <option>Mashkull</option>
+            <form id="Regjistrohu" class="forma" method="POST" action="insertimi.php">
+                <input type="text" name="emri" class="input" placeholder="Emri" required>
+                <input type="text" name="mbiemri" class="input" placeholder="Mbiemri" required>
+                <input type="text" name="username" class="input" placeholder="Emri i Perdoruesit" required>
+                <input type="password" name="password" class="input" placeholder="Fjalkalimi" required>
+                <input type="text" name="email" class="input" id="Email" placeholder="Email" required>
+                <input type="number" name="numri_kontaktues" class="input" placeholder="Numri Kontaktues" required>
+                <select name="gjinia" class="Gjinia">
+                    <option value="f">Femer</option>
+                     <option value="m">Mashkull</option>
                 </select>
                 <button onclick="Validate()" type="submit" class="submit-btn">Regjistrohu</button>
             </form>
