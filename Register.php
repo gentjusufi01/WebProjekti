@@ -10,13 +10,13 @@
 <body >
     <script src="javascript.js"></script>
     <nav class="navbar">
-        <a href="index.html"><img src="./foto/Logo.png"  class="logob"></a>
+        <a href="index.php"><img src="./foto/Logo.png"  class="logob"></a>
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="Product.html">PRODUKTET</a></li>
-            <li><a href="AboutUs.html">ABOUT US</a></li>
-            <li><a href="News.html">NEWS</a></li>
-            <li><a href="Register.html">REGISTER</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="Product.php">PRODUKTET</a></li>
+            <li><a href="AboutUs.php">ABOUT US</a></li>
+            <li><a href="News.php">NEWS</a></li>
+            <li><a href="Register.php">REGISTER</a></li>
 
     
         </ul>
