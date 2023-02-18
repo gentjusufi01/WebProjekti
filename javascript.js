@@ -1,4 +1,3 @@
-//Slideri
 var i = 0;
 var imgArray = [
 "foto/korsetashum.jpg",
@@ -63,7 +62,7 @@ for (var i = 0; i < btns.length; i++) {
 
 filterSelection('all');
 
-//Validimi
+/*//Validimi
 function validate() {
 
   var user = document.getElementById("e").value;
@@ -85,7 +84,7 @@ function validate() {
     return false;
   }
   
-}
+}*/
 
 /*//Login dhe Register Form
 
@@ -103,4 +102,38 @@ function login(){
     y.style.left = "450px";
     z.style.left = "0";
 }
-*/
+
+//Validimi
+function Validate(){
+  
+  var mail = getElementById("Email").value;
+
+  var Regex = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9-])+([a-zA-Z0-9-]+)*$/;
+
+  if (Regex.Email(mail)) {
+
+    alert("Email adresa juaj eshte valide!");
+
+    return true;
+
+  } else {
+
+    alert("Email adresa juaj nuk eshte valide, provoni perseri!");
+
+    return false;
+
+  }
+
+}*/
+function Validate() {
+  var mail = document.getElementById("Email").value;
+  var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+  if (regex.test(mail)) {
+    alert("Email adresa juaj eshte valide!");
+    return true;
+  } else {
+    alert("Email adresa juaj nuk eshte valide, provoni perseri!");
+    return false;
+  }
+}
