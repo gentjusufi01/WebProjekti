@@ -62,42 +62,27 @@ for (var i = 0; i < btns.length; i++) {
 
 filterSelection('all');
 
+//Validimi i regjistrit
 function ValidateReg() {
   var mail = document.getElementById("Email").value;
-  var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  
-  if (regex.test(mail)) {
-    alert("Email adresa juaj eshte valide!");
-    return true;
-  } else {
-    alert("Email adresa juaj nuk eshte valide, provoni perseri!");
-    return false;
-  }
-}
-function ValidateReg(){
+  var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,}$/;
   var pasi = document.getElementById("Pas").value;
   var pregex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-
-  if(pregex.test(pasi)){
-    alert("Fjalkalimi juaj eshte valid");
-    return true;
-  }
-  else{
-    alert ("Fjalkalimi juaj nuk i ploteson kerkesat");
-    return false;
-  }
-}
-function ValidateReg(){
   var nr = document.getElementById("Nr").value;
   var nregex = /^04\d{7}$/;
 
-  if(nregex.test(nr)){
-    alert("Numri Kontaktues eshte valid");
-    return true;
-  }
-  else{
-    alert("Numri Kontktues nuk eshte valid");
+  if (!regex.test(mail)) {
+    alert("Email adresa juaj nuk eshte valide, provoni perseri!");
     return false;
+  } else if (!pregex.test(pasi)) {
+    alert("Fjalkalimi juaj nuk eshte valide, provoni perseri!");
+    return false;
+  } else if (!nregex.test(nr)) {
+    alert("Numri Kontktues juaj nuk eshte valide, provoni perseri!");
+    return false;
+  } else {
+    alert("Ju jeni regjistruar me sukses!");
+    return true;
   }
 }
 // function ValidateLog(){
