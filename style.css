@@ -520,6 +520,15 @@ News
   background-color: #ff2626;
   text-align: center;
 }
+.NewsI {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.NewsI li {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
 #News{
             
   display: flex;
@@ -531,6 +540,7 @@ News
   padding-inline-end: 10px;
 }
 #News ul{
+  display: flex;
   list-style-type: none;
 }
 #News ul li img{
