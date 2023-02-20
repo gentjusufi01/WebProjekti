@@ -85,9 +85,9 @@
             
             <div class="foot">
                 <ul>
-                  <li><a href="index.html">HOME</a></li>
-                  <li><a href="Product.html">PRODUKTET</a></li>
-                  <li><a href="AboutUs.html">ABOUT US</a></li>
+                  <li><a href="index.php">HOME</a></li>
+                  <li><a href="Product.php">PRODUKTET</a></li>
+                  <li><a href="AboutUs.php">ABOUT US</a></li>
 				  <li><a href="News.php">NEWS</a></li>
            		  <li><a href="Register.php">LOG IN/SIGN UP</a></li>
         
