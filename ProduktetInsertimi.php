@@ -25,8 +25,8 @@ if (!$result) {
 // Loop through each row of data and display it on your website
 $i = 0;
 foreach ($result as $row) {
-    if ($row["Kategoria"] == $_GET["Kategoria"]) {
-      echo '<div class="filterDiv ' . $row["Kategoria"] . '">';
+    //if ($row["Kategoria"] == $_GET["Kategoria"]) {
+      echo '<div style="height:331px; width:331px; margin:auto 30px;" class="filterDiv ' . $row["Kategoria"] . '">';
       echo '<div class="ac">';
       echo '<div class="Image">';
       echo '<img src="' . 'foto/' . $row['Image'] . '" alt="" />';
@@ -35,16 +35,20 @@ foreach ($result as $row) {
       echo '<div class="Qmimi">' . $row["Qmimi"] . '€</div>';
       echo '</div>';
       echo '</div>';
-    }
+   // }
   }
 
     $i++;
-    if ($i % 4 == 0) {
-        echo '</div><div style="display: grid; grid-template-columns: 4fr 1fr; grid-gap: 20px;">';
-    }
+    // if ($i % 4 == 0) {
+    //     echo '</div><div style="display: grid; grid-template-columns: 4fr 1fr; grid-gap: 20px;">';
+    // }
 
 echo '</div>';
 
 // Close the database connection
 $conn->close();
 ?>
+
+<html>
+<link rel="stylesheet" href="style.css">
+</html>
