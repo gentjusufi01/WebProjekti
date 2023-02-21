@@ -28,6 +28,11 @@
 </div>
 
 <div class="container">
+
+<div>
+    <?php include 'ProduktetInsertimi.php'; ?>
+    </div>
+
   <div class="ac-center box">
   <div class="filterDiv korset">
     <div class="ac">
