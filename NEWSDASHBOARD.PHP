@@ -25,7 +25,7 @@
 	            echo "<td>" . $row["Title"] . "</td>";
 	            echo "<td>" . $row["Text"] . "</td>";
 	            
-	                echo "<td><button type='submit' name='id' value='" . $row["ID_News"] . "'>Delete</button></td>";
+	                echo "<td><button style='display: inline-block;border-radius: 80px;background-color: #ff4321;padding: 10px 20px;color: white;font-weight: 600;'  type='submit' name='id' value='" . $row["ID_News"] . "'>Delete</button></td>";
 	       
 	               
 	            

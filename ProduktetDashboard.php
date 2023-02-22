@@ -24,9 +24,9 @@
 	            echo "<td>" . $row["ID_Produkti"] . "</td>";
 	            echo "<td>" . $row["Kategoria"] . "</td>";
 	            echo "<td>" . $row["Emri"] . "</td>";
-	            echo "<td>" . $row["Qmimi"] . "</td>";
+	            echo "<td>" . $row["Qmimi"] . "&euro;</td>";
 	            
-	                echo "<td><button type='submit' name='id' value='" . $row["ID_Produkti"] . "'>Delete</button></td>";
+	                echo "<td><button style='display: inline-block;border-radius: 80px;background-color: #ff4321;padding: 10px 20px;color: white;font-weight: 600;' type='submit' name='id' value='" . $row["ID_Produkti"] . "'>Delete</button></td>";
 	       
 	               
 	            

@@ -57,7 +57,7 @@
 	            echo "<td>" . $row["Username"] . "</td>";
 	            echo "<td>" . $row["Email"] . "</td>";
 	            if ($row["Roli"] !== "Admin") {
-	                echo "<td><button type='submit' name='id' value='" . $row["ID_User"] . "'>Delete</button></td>";
+	                echo "<td><button style='display: inline-block;border-radius: 80px;background-color: #ff4321;padding: 10px 20px;color: white;font-weight: 600;' type='submit' name='id' value='" . $row["ID_User"] . "'>Delete</button></td>";
 	            } else {
 	                echo "<td></td>";
 	            }
@@ -74,17 +74,16 @@
 	<br>
 	<hr>
 	<br>
-	<h1 style="text-align: center;">Produkt List</h1> 
-	<br>
-	<?php include './ProduktetDashboard.php'; ?>
-    <br>
-
-	<br>
-	<hr>
-	<br>
 	<h1 style="text-align: center;">News List</h1> 
 	<br>
 	<?php include './NEWSDASHBOARD.php'; ?>
+    <br>
+	<br>
+	<hr>
+	<br>
+	<h1 style="text-align: center;">Product List</h1> 
+	<br>
+	<?php include './ProduktetDashboard.php'; ?>
     <br>
     <?php include './footer.php'?>
 

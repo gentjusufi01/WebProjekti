@@ -21,6 +21,12 @@
                     <a href="https://www.tiktok.com/@spiffyline"><img src="./foto/tiktok.png"></a>
                     <a href="https://www.instagram.com/spiffyline/"><img src="./foto/facebook.png" ></i></a>
                     <a href="https://www.instagram.com/spiffyline/"><img src="./foto/instagram.png"></i></a>
+                    <br>
+                    <p style='color:gray;'>
+                    &copy; <script>
+                                    document.write(new Date().getFullYear())
+                                    </script> 
+                    Spiffyline</p>
                   </div>
             </div>
         </section>
