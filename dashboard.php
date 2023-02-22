@@ -80,6 +80,20 @@
 	    $conn->close();
 	}
 	?>
+	<br>
+	<hr>
+	<br>
+	<h1 style="text-align: center;">Produkt List</h1> 
+	<br>
+	<?php include './ProduktetDashboard.php'; ?>
+    <br>
+
+	<br>
+	<hr>
+	<br>
+	<h1 style="text-align: center;">News List</h1> 
+	<br>
+	<?php include './NEWSDASHBOARD.php'; ?>
     <br>
     <section id="footer">
             
