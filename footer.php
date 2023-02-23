@@ -14,7 +14,7 @@
                <ul>
                   <li>CONTACT US</li>
                   <li>Spiffyline@gmail.com</li>
-                  <li>+383 48 374 893</li>
+                  <li>+383 48 777 777</li>
                 </ul>
       
                 <div class="social-links" style="margin-left: 47%;">

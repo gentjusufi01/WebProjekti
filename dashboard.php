@@ -4,7 +4,17 @@
 	<title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
 	<style>
-
+		.butoni{
+			display: inline-block;
+			border-radius: 80px;
+			background-color: #ff4321;
+			padding: 10px 20px;
+			color: white;
+			font-weight: 600;
+			margin-left:15px;
+			margin-bottom:15px;
+			border:2px solid #FFB84C ;
+		}
 		table {
 			border-collapse: collapse;
             margin: 0 auto;
@@ -22,68 +32,57 @@
 		tr:nth-child(even) {
 			background-color: #f2f2f2;
 		}
+		.hidden {
+			display: none;
+		}
+
 	</style>
+	<script>
+		function showTag(tagId) {
+  var tags = document.querySelectorAll("div[id^='tag']");
+  for (var i = 0; i < tags.length; i++) {
+    if (tags[i].id == tagId) {
+      tags[i].classList.remove("hidden");
+    } else {
+      tags[i].classList.add("hidden");
+    }
+  }
+}
+
+</script>
 </head>
 <body>
+
+
 <?php include './header.php' ?>
     <br>
+	<button class="butoni" onclick="showTag('tag1')">User List</button>
+<button class="butoni" onclick="showTag('tag2')">News List</button>
+<button class="butoni" onclick="showTag('tag3')">Product list</button>
+
+<div id="tag1" class="hidden">
 	<h1 style="text-align: center;">Spiffyline User List</h1> 
     <br>
-	<?php
-	$host = "localhost";
-	$dbUsername = "root";
-	$dbPassword = "";
-	$dbname = "spiffyline";
+	<?php include './klientatdashboard.php'; ?>
+</div>
 
-	$conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
-	if ($conn->connect_error) {
-	    die("Connection failed: " . $conn->connect_error);
-	} else {
-	    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	        $id = $_POST["id"];
-	        $sql = "DELETE FROM `register` WHERE `ID_User` = $id";
-	        $conn->query($sql);
-	    }
-	    $sql = "SELECT * FROM `register`";
-	    $result = $conn->query($sql);
-	    if ($result->num_rows > 0) {
-	        echo "<form method='post'>";
-	        echo "<table>";
-	        echo "<tr><th>ID</th><th>Name</th><th>Username</th><th>Email</th><th>Action</th></tr>";
-	        while ($row = $result->fetch_assoc()) {
-	            echo "<tr>";
-	            echo "<td>" . $row["ID_User"] . "</td>";
-	            echo "<td>" . $row["Emri"] . "</td>";
-	            echo "<td>" . $row["Username"] . "</td>";
-	            echo "<td>" . $row["Email"] . "</td>";
-	            if ($row["Roli"] !== "Admin") {
-	                echo "<td><button style='display: inline-block;border-radius: 80px;background-color: #ff4321;padding: 10px 20px;color: white;font-weight: 600;' type='submit' name='id' value='" . $row["ID_User"] . "'>Delete</button></td>";
-	            } else {
-	                echo "<td></td>";
-	            }
-	            echo "</tr>";
-	        }
-	        echo "</table>";
-	        echo "</form>";
-	    } else {
-	        echo "<p>No results found.</p>";
-	    }
-	    $conn->close();
-	}
-	?>
-	<br>
-	<hr>
-	<br>
-	<h1 style="text-align: center;">News List</h1> 
-	<br>
-	<?php include './NEWSDASHBOARD.php'; ?>
+<div id="tag2" class="hidden">
+<h1 style="text-align: center;">Spiffyline News List</h1> 
     <br>
-	<br>
-	<hr>
-	<br>
-	<h1 style="text-align: center;">Product List</h1> 
-	<br>
+	<?php include './NEWSDASHBOARD.php'; ?>	
+</div>
+<div id="tag3" class="hidden">
+<h1 style="text-align: center;">Spiffyline Product List</h1> 
+    <br>
 	<?php include './ProduktetDashboard.php'; ?>
+</div>
+</div>
+
+	
+	
+
+
+	
     <br>
     <?php include './footer.php'?>
 
