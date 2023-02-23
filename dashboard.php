@@ -56,10 +56,11 @@
 
 <?php include './header.php' ?>
     <br>
+	<div style="display:flex;justify-content: center;width: 100%;">
 	<button class="butoni" onclick="showTag('tag1')">User List</button>
 <button class="butoni" onclick="showTag('tag2')">News List</button>
 <button class="butoni" onclick="showTag('tag3')">Product list</button>
-
+</div>
 <div id="tag1" class="hidden">
 	<h1 style="text-align: center;">Spiffyline User List</h1> 
     <br>
