@@ -1,5 +1,5 @@
 <?php
-class UsersDatabase {
+class NewsDatabase {
     private $conn = null;
     private $host = "localhost";
     private $dbUsername = "root";
@@ -37,16 +37,13 @@ class UsersDatabase {
     }
 }
 
-$registerDB = new UsersDatabase();
+$registerDB = new NewsDatabase();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["delete_id"])) {
         $registerDB->deleteUsers($_POST["delete_id"]);
     } else if (isset($_POST["edit_id"])) {
-		if (isset($_POST["edit_id"]) && isset($_POST["edit_username"]) && isset($_POST["edit_password"]) && isset($_POST["edit_email"])) {
-            $registerDB->updateUsers($_POST["edit_id"], $_POST["edit_username"], $_POST["edit_password"], $_POST["edit_email"]);
-        }
-     
+        $registerDB->updateUsers($_POST["edit_id"], $_POST["edit_username"], $_POST["edit_password"], $_POST["edit_email"]);
     }
 }
 
@@ -54,7 +51,7 @@ $register = $registerDB->getUsers();
 
 if (!empty($register)) {
     echo "<table>";
-    echo "<tr><th>ID</th><th>Username</th><th>Password</th><th>Email</th><th>Delete</th><th>Update</th></tr>";
+    echo "<tr><th>ID</th><th>Title</th><th>Text</th><th>Action</th><th>Edit</th></tr>";
     foreach ($register as $row) {
         echo "<tr>";
         echo "<td>" . $row["ID_User"] . "</td>";
@@ -72,7 +69,7 @@ if (!empty($register)) {
                    <div> <input type='hidden' name='edit_id' value='" . $row["ID_User"] . "'>
                     <input style='height:30px;' type='text' name='edit_Username' placeholder='username' value='" . $row["Username"] . "'><br>
                     <input style='height:30px;' type='text' name='edit_Password' placeholder='password' value='" . $row["Password"] . "'><br>
-                    <input style='height:30px;' type='text' name='edit_Email' placeholder='email' value='" . $row["Email"] . "'><br></div>
+                    <input style='height:30px;' type='text' name='edit_Email' placeholder='email' value='" . $row["Email"] . "'><br>
                     <button style='margin-left:5px; display: inline-block;border-radius: 80px;background-color: #ff4321;padding: 10px 20px;color: white;font-weight: 600;' type='submit' name='id' >Save</button>
                 </form>
              </td>";
