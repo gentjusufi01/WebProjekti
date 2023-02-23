@@ -43,7 +43,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["delete_id"])) {
         $newsDB->deleteNews($_POST["delete_id"]);
     } else if (isset($_POST["edit_id"])) {
-        $newsDB->updateNews($_POST["edit_id"], $_POST["edit_title"], $_POST["edit_text"]);
+        if (isset($_POST["edit_id"]) && isset($_POST["edit_title"]) && isset($_POST["edit_text"])) {
+			$newsDB->updateNews($_POST["edit_id"], $_POST["edit_title"], $_POST["edit_text"]);
+		}
+		
     }
 }
 
