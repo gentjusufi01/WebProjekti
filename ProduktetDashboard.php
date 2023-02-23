@@ -42,8 +42,11 @@ $ProduktetDB = new ProduktetDatabase();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["delete_id"])) {
         $ProduktetDB->deleteProduktet($_POST["delete_id"]);
-    } else if (isset($_POST["edit_id"])) {
-        $ProduktetDB->updateProduktet($_POST["edit_id"], $_POST["edit_emri"], $_POST["edit_qmimi"]);
+    } else if (isset($_POST["edit_id"]) ) {
+        if (isset($_POST["edit_id"]) && isset($_POST["edit_emri"]) && isset($_POST["edit_qmimi"])) {
+			$ProduktetDB->updateProduktet($_POST["edit_id"], $_POST["edit_emri"], $_POST["edit_qmimi"]);
+		}
+        
     }
 }
 
